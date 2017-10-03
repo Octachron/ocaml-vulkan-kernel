@@ -1,0 +1,15 @@
+opam-version: "1.2"
+maintainer: "octachron, <octa@polychoron.fr>"
+authors: "octachron, <octa@polychoron.fr>"
+homepage: "https://www.github.com/Octachron/ocaml-vulkan-kernel"
+dev-repo: "https://www.github.com/Octachron/ocaml-vulkan-kernel.git"
+bug-reports: "https://www.github.com/Octachron/ocaml-vulkan-kernel/issues"
+version: "1.0"
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "jbuilder" {build}
+  "ctypes"
+]
+license: "Apache-2.0"

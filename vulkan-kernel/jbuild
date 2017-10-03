@@ -1,0 +1,9 @@
+(jbuild_version 1)
+
+(rule (
+  (targets (non_dispatchable.ml) )
+  (deps (../generator/gen.exe))
+  (action (run ${<} -o ${@}) )
+))
+
+(library( (name vulkan_kernel) (public_name vulkan-kernel) (libraries (ctypes) ) ) )
